@@ -1,0 +1,11 @@
+<h2>Component 2</h2>
+<input type="button" value="Click me" (click)="ClickMe()"/><br><br>
+Keyup: <input type="text" (keyup)="Search($event)"/> {{result}}<br><br>
+Keyup enter: <input type="text" (keyup.enter)="Search($event)"/> {{result}}<br><br>
+
+<select (change)="selectCategory($event)">
+    <option value="c1">Category 1</option>
+    <option value="c2">Category 2</option>
+    <option value="c3">Category 3</option>
+    <option value="c4">Category 4</option>
+</select><br><br>{{result2}}

@@ -1,0 +1,32 @@
+<h2>Component 7</h2>
+<h3>Product List</h3>
+<table boder="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Status</th>
+    </tr>
+    <tr *ngFor="let p of products">
+        <td>{{p._id}}</td>
+        <td>{{p.name}}</td>
+        <td>{{p.price}}</td>
+        <td>{{p.status}}</td>
+    </tr>
+</table>
+<br><br>
+<input type="text" (keyup.enter)="Search($event)"/> {{result}}<br><br>
+<table boder="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Status</th>
+    </tr>
+    <tr>
+        <td>{{products_find._id}}</td>
+        <td>{{products_find.name}}</td>
+        <td>{{products_find.price}}</td>
+        <td>{{products_find.status}}</td>
+    </tr>
+</table>
